@@ -6,7 +6,7 @@ router.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/notes.html'))
 });
 
-//make index.html landing page. for landing page we don't want an endpoint. star means no endpoint
+//make index.html landing page
 router.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../../public/index.html'))
 });
